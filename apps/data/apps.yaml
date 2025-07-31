@@ -20,3 +20,14 @@ apps:
           - net_coros_db
         consumers:
           - net_coros_web
+        
+  - name: garming_app
+    services:
+      - name: garming-web-services
+        services:
+          - https
+          - http
+        scope:
+          - net_garmin_web
+        consumers:
+          - feed-books
