@@ -11,3 +11,12 @@ apps:
           - net_coros_web
         consumers:
           - Any
+
+      - name: coros_db
+        services:
+          - AOL
+          - ssh
+        scope:
+          - net_coros_db
+        consumers:
+          - net_coros_web
