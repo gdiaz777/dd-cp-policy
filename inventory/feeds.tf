@@ -2,7 +2,7 @@
 # https://opensheet.elk.sh/1AxnotD9U9kKOluFNRFPQoddXRg4ffVHaamdDIj31UhM/networks
 
 data "http" "feeds" {
-  url = "https://opensheet.elk.sh/1AxnotD9U9kKOluFNRFPQoddXRg4ffVHaamdDIj31UhM/feeds"
+  url = "https://opensheet.elk.sh/1_AGRolYPId7YPwg07v-Fq6GXTF7Hx1MP1-AeGoScakA/feeds"
 }
 locals {
   feeds = jsondecode(data.http.feeds.response_body)
